@@ -9,4 +9,51 @@
   chosen {
     zmk,matrix_transform = &default_transform;
   };
+  combos {
+	compatible = "zmk,combos";
+
+	combo_caps_word {
+		timeout-ms = <50>;
+		key-positions = <16 19>; // LSHIFT + RSHIFT
+		bindings = <&caps_word>;
+		layers = <0>; // Only on QWERTY layer
+	};
+
+	// The following combos are really only for MacOS
+	combo_undo {
+		timeout-ms = <50>;
+		key-positions = <25 26>; // Z + X
+		bindings = <&kp LG(Z)>; // CMD + Z
+		layers = <0>; // Only on QWERTY layer
+	};
+
+	combo_cut {
+		timeout-ms = <50>;
+		key-positions = <25 27>; // Z + C
+		bindings = <&kp LG(X)>; // CMD + X
+		layers = <0>; // Only on QWERTY layer
+	};
+
+	combo_copy {
+		timeout-ms = <50>;
+		key-positions = <26 27>; // X + C
+		bindings = <&kp LG(C)>; // CMD + C
+		layers = <0>; // Only on QWERTY layer
+	};
+
+	combo_paste {
+		timeout-ms = <50>;
+		key-positions = <27 28>; // C + V
+		bindings = <&kp LG(V)>; // CMD + V
+		layers = <0>; // Only on QWERTY layer
+	};
+
+	combo_select_all {
+		timeout-ms = <50>;
+		key-positions = <25 28>; // Z + V
+		bindings = <&kp LG(A)>; // CMD + A
+		layers = <0>; // Only on QWERTY layer
+	};
+  };
+
 };
