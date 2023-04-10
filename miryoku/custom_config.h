@@ -19,19 +19,6 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 
 // mappings for the Kinesis Advantage 360 Pro
 // #if defined (MIRYOKU_KEYBOARD_adv360pro)
-	// define extra keys for the adv360
-	#define MIRYOKU_LAYOUTMAPPING_ADV360( \
-		K00, K01, K02, K03, K04,                                                        K05, K06, K07, K08, K09, \
-		K10, K11, K12, K13, K14,                                                        K15, K16, K17, K18, K19, \
-		K20, K21, K22, K23, K24,                                                        K25, K26, K27, K28, K29, \
-		N30, N31, K32, K33, K34,                                                        K35, K36, K37, N38, N39 \
-	) \
-	&kp EQUAL   &kp N1     &kp N2    &kp N3     &kp N4  &kp N5  &tog U_TAP                                                                              &tog U_NUM  &kp N6  &kp N7  &kp N8  &kp N9    &kp N0     &kp MINUS \
-	&kp GRAVE   K00        K01       K02        K03     K04     &kp LBKT                                                                                &kp RBKT    K05     K06     K07     K08       K09        &kp BSLH \
-	&kp LCTRL   K10        K11       K12        K13     K14     &kp LPAR         &kp LALT  &u_caps_word                  &kp LGUI   &kp RCTRL           &kp RPAR    K15     K16     K17     K18       K19        &kp SQT \
-	&kp LSHFT   K20        K21       K22        K23     K24               &none  &none     &kp HOME      &none    &none  &kp PG_UP  &none      &none                K25     K26     K27     K28       K29        &kp RSHFT \
-	&mo U_FUN2  &kp HYPER  &kp LEFT  &kp RIGHT  K32                       K33    K34       &kp END                       &kp PG_DN  K35        K36                          K37     &kp UP  &kp DOWN  &kp HYPER  &mo U_FUN2
-
 	// add new function layer that uses the top num row and allow the other keys to still be used as normal.
 	// specifically for some games that uses funtion keys along with WASD
 	#define MIRYOKU_LAYER_LIST \
@@ -45,7 +32,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	MIRYOKU_X(NUM,    "Num") \
 	MIRYOKU_X(SYM,    "Sym") \
 	MIRYOKU_X(FUN,    "Fun") \
-	MIRYOKU_X(FUN2,   "Fun2")
+	MIRYOKU_X(FUNG,   "FunGame")
 
 	#define U_BASE   0
 	#define U_EXTRA  1
@@ -57,10 +44,23 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	#define U_NUM    7
 	#define U_SYM    8
 	#define U_FUN    9
-	#define U_FUN2   10
+	#define U_FUNG   10
+
+	// define extra keys for the adv360
+	#define MIRYOKU_LAYOUTMAPPING_ADV360( \
+		K00, K01, K02, K03, K04,                                                        K05, K06, K07, K08, K09, \
+		K10, K11, K12, K13, K14,                                                        K15, K16, K17, K18, K19, \
+		K20, K21, K22, K23, K24,                                                        K25, K26, K27, K28, K29, \
+		N30, N31, K32, K33, K34,                                                        K35, K36, K37, N38, N39 \
+	) \
+	&kp EQUAL   &kp N1     &kp N2    &kp N3     &kp N4  &kp N5  &tog U_TAP                                                                              &tog U_NUM  &kp N6  &kp N7  &kp N8  &kp N9    &kp N0     &kp MINUS \
+	&kp GRAVE   K00        K01       K02        K03     K04     &kp LBKT                                                                                &kp RBKT    K05     K06     K07     K08       K09        &kp BSLH \
+	&kp LCTRL   K10        K11       K12        K13     K14     &kp LPAR         &kp LALT  &u_caps_word                  &kp LGUI   &kp RCTRL           &kp RPAR    K15     K16     K17     K18       K19        &kp SQT \
+	&kp LSHFT   K20        K21       K22        K23     K24               &none  &none     &kp HOME      &none    &none  &kp PG_UP  &none      &none                K25     K26     K27     K28       K29        &kp RSHFT \
+	&mo U_FUNG  &kp HYPER  &kp LEFT  &kp RIGHT  K32                       K33    K34       &kp END                       &kp PG_DN  K35        K36                          K37     &kp UP  &kp DOWN  &kp HYPER  &mo U_FUNG
 
 	// define define layer mapping for new FUN layer
-	#define MIRYOKU_LAYOUTMAPPING_FUN2( \
+	#define MIRYOKU_LAYOUTMAPPING_FUNG( \
 		K00, K01, K02, K03, K04,                                                        K05, K06, K07, K08, K09, \
 		K10, K11, K12, K13, K14,                                                        K15, K16, K17, K18, K19, \
 		K20, K21, K22, K23, K24,                                                        K25, K26, K27, K28, K29, \
@@ -70,10 +70,10 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	&kp GRAVE   K00        K01       K02         K03     K04     &kp LBKT                                                                                &kp RBKT    K05     K06     K07     K08       K09        &kp BSLH \
 	&kp LCTRL   K10        K11       K12         K13     K14     &kp LPAR         &kp LALT  &u_caps_word                  &kp LGUI   &kp RCTRL           &kp RPAR    K15     K16     K17     K18       K19        &kp SQT \
 	&kp LSHFT   K20        K21       K22         K23     K24               &none  &none     &kp HOME      &none    &none  &kp PG_UP  &none      &none                K25     K26     K27     K28       K29        &kp RSHFT \
-	&mo U_FUN2  &kp HYPER  &kp LEFT  &kp RIGHT   K32                       K33    K34       &kp END                       &kp PG_DN  K35        K36                          K37     &kp UP  &kp DOWN  &kp HYPER  &mo U_FUN2
+	&mo U_FUNG  &kp HYPER  &kp LEFT  &kp RIGHT   K32                       K33    K34       &kp END                       &kp PG_DN  K35        K36                          K37     &kp UP  &kp DOWN  &kp HYPER  &mo U_FUNG
 	
 	// all trans keys so that it can be used in whatever layer
-	#define MIRYOKU_LAYER_FUN2 \
+	#define MIRYOKU_LAYER_FUNG \
 	&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans, \
 	&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans, \
 	&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans, \
