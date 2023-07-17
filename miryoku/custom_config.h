@@ -18,7 +18,7 @@ U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp 
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 // mappings for the Kinesis Advantage 360 Pro
-// #if defined (MIRYOKU_KEYBOARD_adv360pro)
+#if defined (MIRYOKU_KEYBOARD_adv360pro)
 	// define extra keys for the adv360
 	#define MIRYOKU_LAYOUTMAPPING_ADV360( \
 		K00, K01, K02, K03, K04,                                                        K05, K06, K07, K08, K09, \
@@ -78,7 +78,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	// #define U_SYM    8
 	// #define U_FUN    9
 	// #define U_FUNG   10
-// #endif
+#endif
 
 #if defined (MIRYOKU_KEYBOARD_corneish_zen_v2)
 	// define EXTRA layer as dedicated gaming layer
