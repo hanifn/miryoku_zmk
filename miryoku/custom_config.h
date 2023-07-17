@@ -81,7 +81,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	// #define U_FUNG   10
 #endif
 
-#if defined (MIRYOKU_KEYBOARD_corneish_zen_v1)
+// #if defined (MIRYOKU_KEYBOARD_corneish_zen_v1)
 	// define EXTRA layer as dedicated gaming layer
 	// #define MIRYOKU_LAYER_EXTRA \
 	// &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -112,4 +112,4 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	// &kp LCTRL  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp SQT \
 	// &kp LSHFT  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp RSHFT \
 	// 					 K32  K33  K34       K35  K36  K37
-#endif
+// #endif
