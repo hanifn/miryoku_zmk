@@ -26,8 +26,8 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 	K20, K21, K22, K23, K24,                                                        K25, K26, K27, K28, K29, \
 	N30, N31, K32, K33, K34,                                                        K35, K36, K37, N38, N39 \
 ) \
-&kp EQUAL   &kp N1     &kp N2   &kp N3    &kp N4    &kp N5  &tog U_TAP                                                                 &tog U_NAV  &kp N6  &kp N7    &kp N8  &kp N9    &kp N0    &kp MINUS \
-&kp GRAVE   K00        K01      K02       K03       K04     &kp LBKT                                                                   &kp RBKT    K05     K06       K07     K08       K09       &kp BSLH \
-&kp LCTRL   K10        K11      K12       K13       K14     &kp LPAR          K32       &kp CAPS                &kp LGUI   K37         &kp RPAR    K15     K16       K17     K18       K19       &kp SQT \
-&kp LSHFT   K20        K21      K22       K23       K24                &none  &none     &kp HOME &none    &none &kp PG_UP  &none &none             K25     K26       K27     K28       K29       &kp RSHFT \
-&mo U_FUN   &kp HYPER  &kp LALT &kp LEFT  &kp RIGHT                    K33    K34       &kp END                 &kp PG_DN  K35   K36                       &kp DOWN  &kp UP  &kp HYPER &kp LCTRL &mo U_FUN
+&kp EQUAL   &kp N1     &kp N2   &kp N3    &kp N4    &kp N5  &tog U_TAP                                                        &tog U_NAV  &kp N6  &kp N7    &kp N8  &kp N9    &kp N0    &kp MINUS \
+&kp GRAVE   K00        K01      K02       K03       K04     &kp LBKT                                                          &kp RBKT    K05     K06       K07     K08       K09       &kp BSLH \
+&kp LCTRL   K10        K11      K12       K13       K14     &kp LPAR          K32       &kp CAPS       &kp LGUI   K37         &kp RPAR    K15     K16       K17     K18       K19       &kp SQT \
+&kp LSHFT   K20        K21      K22       K23       K24                                 &kp HOME       &kp PG_UP                          K25     K26       K27     K28       K29       &kp RSHFT \
+&mo U_FUN   &kp HYPER  &kp LALT &kp LEFT  &kp RIGHT                    K33    K34       &kp END        &kp PG_DN  K35   K36                       &kp DOWN  &kp UP  &kp HYPER &kp LCTRL &mo U_FUN
